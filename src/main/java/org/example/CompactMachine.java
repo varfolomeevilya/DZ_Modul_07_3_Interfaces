@@ -10,12 +10,13 @@ public class CompactMachine {
     public CompactMachine(){
     }
 
-    public CompactMachine(String name, String model, double grandeCoffeeContainer, int milkContainer, double waterContainer){
+    public CompactMachine(String name, String model, double grandeCoffeeContainer, int milkContainer, double waterContainer, int usedCoffeeTank){
         this.name = name;
         this.model = model;
         this.grandeCoffeeContainer = grandeCoffeeContainer;
         this.milkContainer = milkContainer;
         this.waterContainer = waterContainer;
+        this.usedCoffeeTank = usedCoffeeTank;
     }
 
     private boolean testModel(){
