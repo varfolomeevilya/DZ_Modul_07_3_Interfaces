@@ -8,11 +8,12 @@ public class CoffeeMachine {
     protected int usedCoffeeTank;
     public CoffeeMachine(){
     }
-    public  CoffeeMachine(String name, String model, double grandeCoffeeContainer, double waterContainer){
+    public  CoffeeMachine(String name, String model, double grandeCoffeeContainer, double waterContainer, int usedCoffeeTank){
         this.name = name;
         this.model = model;
         this.grandeCoffeeContainer = grandeCoffeeContainer;
         this.waterContainer = waterContainer;
+        this.usedCoffeeTank = usedCoffeeTank;
     }
     private boolean testModel(){
         if((this.model.contains("100")) || (this.model.contains("500")) || (this.model.contains("1000"))){
