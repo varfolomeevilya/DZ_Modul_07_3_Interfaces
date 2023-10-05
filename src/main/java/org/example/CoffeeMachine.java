@@ -5,6 +5,7 @@ public class CoffeeMachine {
     protected  String model;
     protected double grandeCoffeeContainer;
     protected double waterContainer;
+    protected int usedCoffeeTank;
     public CoffeeMachine(){
     }
     public  CoffeeMachine(String name, String model, double grandeCoffeeContainer, double waterContainer){
