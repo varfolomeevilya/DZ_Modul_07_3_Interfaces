@@ -13,7 +13,7 @@ public class FabricMachine {
      this.model=model;
      this.grandeCoffeeContainer= grandeCoffeeContainer;
      this.grandeCoffeContainer=grandeCoffeContainer;
-     this.usedCoffeeTank=usedCoffeeTank;
+     this.usedCoffeeTank = usedCoffeeTank;
     }
     private boolean testModel(){
         if((this.model.contains("300")) || (this.model.contains("900")) || (this.model.contains("1350"))){
