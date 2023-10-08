@@ -144,4 +144,11 @@ public class FabricMachine extends CoffeeMachine {
     public void setUsedCoffeeTankVolume(int usedCoffeeTankVolume) {
         this.usedCoffeeTankVolume = usedCoffeeTankVolume;
     }
+    @Override
+    public void grindCoffee() {
+        if (coffeeTank - 22 < 0 && grainCoffeeTank >= 22) {
+            grainCoffeeTank -=22;
+            coffeeTank +=22;
+        }
+    }
 }

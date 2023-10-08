@@ -3,7 +3,7 @@ package org.example.CoffeeMachine;
 import org.example.CoffeeMachine.Views.Menu;
 
 
-public abstract class CoffeeMachine {
+public abstract class CoffeeMachine{
     private int coffeeMachineVersion;
     private int waterTankVolume;
     private int coffeeTankVolume;
@@ -154,5 +154,11 @@ public abstract class CoffeeMachine {
 
     public void setUsedCoffeeTank(int usedCoffeeTank) {
         this.usedCoffeeTank = usedCoffeeTank;
+    }
+    public void grindCoffee() {
+        if (coffeeTank - 22 < 0 && grainCoffeeTank >= 22) {
+            grainCoffeeTank -=22;
+            coffeeTank +=22;
+        }
     }
 }

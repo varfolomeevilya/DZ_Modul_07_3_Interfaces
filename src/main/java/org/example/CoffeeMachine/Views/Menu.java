@@ -304,12 +304,24 @@ public class Menu {
         System.out.println("Кофе в баке: " + coffeeMachine.getCoffeeTank() +
                 "\nВоды в баке: " + coffeeMachine.getWaterTank());
     }
-
     private void printTank2() {
-        System.out.println("Кофе в баке: " + coffeeMachine.getCoffeeTank() +
-                "\nВоды в баке: " + coffeeMachine.getWaterTank() +
-                "\nМолока в баке: " + coffeeMachine.getMilkTank());
+        if (coffeeMachine.getGrainCoffeeTankVolume() == 0) {
+            System.out.println("Кофе в баке: " + coffeeMachine.getCoffeeTank() +
+                    "\nВоды в баке: " + coffeeMachine.getWaterTank() +
+                    "\nМолока в баке: " + coffeeMachine.getMilkTank());
+        } else {
+            System.out.println("Кофе в баке: " + coffeeMachine.getGrainCoffeeTank() +
+                    "\nВоды в баке: " + coffeeMachine.getWaterTank() +
+                    "\nМолока в баке: " + coffeeMachine.getMilkTank());
+        }
     }
+
+    private void printTank() {
+        System.out.printf("%s%s", "Кофе в баке: " + coffeeMachine.getCoffeeTank(), "\nВоды в баке: " + coffeeMachine.getWaterTank() +
+                "\nМолока в баке: " + coffeeMachine.getMilkTank() + "\n");
+    }
+
+
 
     public void start(Menu menu) {
         menu.menuController();
